@@ -2,7 +2,6 @@ import json
 from operator import itemgetter
 from config import DATA_DIR
 
-
 def get_data():
     """
     Считывает данные из JSON и возвращает список словарей
@@ -58,6 +57,7 @@ def hide_requisites(requisites:str):
         hided_number = f"{number[:4]} {number[4:6]}** ****{number[-4:]}"
     parts[-1] = hided_number
     return ' '.join(parts)
+
 def get_formated_operation(operation):
     """
     Функция формирования строк на вывод
